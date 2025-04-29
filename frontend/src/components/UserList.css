@@ -1,0 +1,67 @@
+.excel-wrapper {
+    padding: 30px;
+    background: #f5f7fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .excel-wrapper h2 {
+    text-align: center;
+    color: #2d3436;
+    margin-bottom: 20px;
+  }
+  
+  .excel-table {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  
+  .excel-row {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 1.5fr;
+    padding: 10px;
+    border: 1px solid #dfe6e9;
+    background-color: #ffffff;
+    align-items: center;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .excel-row.header {
+    background-color: #00b894;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .excel-row:not(.header):hover {
+    background-color: #dff9fb;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+  }
+  
+  button.edit {
+    color: #0984e3;
+  }
+  
+  button.delete {
+    color: #d63031;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
